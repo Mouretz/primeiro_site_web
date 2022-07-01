@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login | Fintech</title>
+    <link rel="stylesheet" href="css/style_login.css">
+
+</head>
+<body
+<!-- caixa principal de login [boas vindas + input] -->
+    <div class="main-login">
+        <!-- inicio -->
+        <div class="left-login">
+            <h1>Olá, Bem Vindo<br>Entre para o nosso time</h1>
+            <img src="analista.svg" class="animation" alt="animacao de analista">
+        </div>
+        <!-- fim -->
+        <!-- inicio criacao de input com card-->
+        <div class="right-login">
+                    <div class="card-login">
+                <h1>FINTECH</h1>
+                <div class="text-field">
+                    <label for="user">Login</label>
+                    <!-- label descricao fora da caixa form -->
+                    <input type="text" name="usuario" placeholder="Usuário"> 
+                    <!-- placeholder nome dentro do input -->
+                     <!-- caixa para senha -->
+                     </div>
+                    <div class="text-field">
+                        <label for="senha">Senha </label>
+                        <input type="password" id="senha" placeholder="Senha">
+                </div>
+                    <!-- criando botao login-->
+                    <button class="botao-login ">Entrar</button>
+                 </div>
+            </div>
+            <!-- fim card-login -->
+        </div>
+        <!-- fim criacao de card-->
+    </div>
+<!-- fim da caixa principal -->
+    <script src="./js/dom.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
+</body>
+</html>

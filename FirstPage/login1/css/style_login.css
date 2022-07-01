@@ -1,0 +1,194 @@
+
+body{
+    margin: 0px;
+    font-family:'Noto Sans', sans-serif;
+}
+/* Para todos os elementos  */
+body * {
+
+    box-sizing: border-box;
+}
+
+
+/* caixa main */
+.main-login {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;/*alinhar lado a lado */
+    justify-content: center; /* eixo x */
+    align-items: center; /* eixo y */
+    
+
+}
+
+/* caixa left da main */
+.left-login{
+width: 50vw;
+height: 100vh;
+display: flex;
+justify-content: center; 
+align-items: center;
+flex-direction: column;
+   
+}
+
+/* cor titulo de chamada reponsividade*/
+.left-login > h1{
+    color: #D61E1E;
+
+    font-size: 3vw;
+}
+
+/* imagem */
+.animation{
+
+    width: 35vw;
+}
+/* caixa da rigth da main */
+.right-login{
+
+width: 50vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.card-login{
+
+width: 60%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+/* espacamentos dentro do card eixos (y,x) */
+padding: 50px 40px;
+/* cor do card */
+background: #2f2841;
+/* estilo de borda */
+border-radius: 20px;
+/* sombra no card eixos (y, x) */
+box-shadow: 0 10px #00000056;
+}
+
+.card-login > h1{
+color:white;
+/* grossura da fonte */
+font-weight: 800;
+margin: 0;
+}
+
+/* estilos para label e input eixos invertem */
+.text-field{
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+justify-content: center;
+/* margens entre label e caixa acima */
+margin: 10px;
+/* deixar botao responsivo */
+width: 100%;
+
+}
+
+/* estilo input */
+ .text-field > input{
+
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0 10px #00000056;
+    /* retirar caixa ao passar mouse */
+    outline: none;
+    /* div filho nao passar a div pai */
+    box-sizing: border-box;
+}
+
+.text-field > label{
+
+    color: #f0ffffde;
+    /* margem para baixo */
+    margin-bottom: 10px;
+
+}
+
+.text-field >input::placeholder {color: #f0ffffde;}
+
+.botao-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius:  8px;
+    /* Maiusculo */
+    text-transform: uppercase;
+    outline: none;
+    /* peso da fonte */
+    font-weight: 800;
+    /* espacamento */
+    letter-spacing: 3px;
+    color:white;
+    background: #D61E1E;
+    cursor: pointer;
+    box-shadow: opx 10px 40px -12px red;
+
+}
+
+
+
+/* enquanto a largura de 950 px aconteca */
+@media only screen and (max-width: 950px){
+.card-login {width: 85%;}
+
+
+}
+ /* pixel pequeno dividindo 2 caixa na tela */
+@media only screen and (max-width: 600px) {
+.main-login
+{
+    flex-direction: column;
+}
+
+.left-login>h1 {
+    display: none;
+}
+/* para oucupar tudo no celular */
+.left-login{
+    width: 100%;
+    height: auto;
+
+}
+.right-login{
+    width: 100%;
+    height: auto;
+}
+/* aumentando imagem */
+.animation{
+    width: 50vw;
+}
+.card-login{
+    width: 90%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
